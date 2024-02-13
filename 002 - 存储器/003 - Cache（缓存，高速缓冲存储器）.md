@@ -13,7 +13,7 @@
 # 0x02 地址映射
 
 ## Cache
-![](Photo/20240103100610.png)
+![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Computer-organization/202402131048737.png)
 Cache line：字块，又叫Cache行
 Cache line的内容与Cache地址是不一样的，现在默认Cache line的内容是分为：**标记阵列容量**（替换算法控制位、脏位、标记（tag）项、有效位）+ **每行存储的数据**。而Cache地址是：**块号 + 块内地址。**
 
@@ -89,10 +89,10 @@ Cache字块地址分为Cache组地址和组内块号
 |     8位      | 9位           | 3位        |
 	2. 然后根据路数Cache减去相应的位数	，主存字块标记加上相同的位数。
 
-![](Photo/20240102193415.png)
+![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Computer-organization/202402131048715.png)
 
 - 按字节编址：
-![](Photo/20240102193449.png)
+![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Computer-organization/202402131048765.png)
 
 
 **（2）设Cache的初态为空，CPU依次从主存第0、1、2--89号单元读出90个字（主存一次读出一个字），并重复按此次序读8次，问命中率是多少？**
@@ -106,7 +106,7 @@ Cache字块地址分为Cache组地址和组内块号
 
 设Cache的存取周期为t，则根据题意，主存的存取周期为6t。
 则有无Cache系统的速度之比为：
-![](Photo/20240102194322.png)
+![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Computer-organization/202402131048824.png)
 所以，速度提高了5.54 **-1**=4.54倍。（记得-1）
 
 ### 组相联映射
@@ -115,7 +115,7 @@ Cache字块地址分为Cache组地址和组内块号
 
 **1）Cache地址各字段如何划分（各需多少位）？**
 Cache地址共12位。其中块内字节地址7位、Cache字块地址5位。
-![](Photo/20240102192924.png)
+![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Computer-organization/202402131125760.png)
 
 
 **2）写出内存地址375FH可能映射成的Cache地址（用16进制表示）。**
