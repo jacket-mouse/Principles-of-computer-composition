@@ -13,8 +13,11 @@
 # 0x02 地址映射
 
 ## Cache
+
 ![](https://1ees0n.oss-cn-qingdao.aliyuncs.com/Computer-organization/202402131048737.png)
+
 Cache line：字块，又叫Cache行
+
 Cache line的内容与Cache地址是不一样的，现在默认Cache line的内容是分为：**标记阵列容量**（替换算法控制位、脏位、标记（tag）项、有效位）+ **每行存储的数据**。而Cache地址是：**块号 + 块内地址。**
 
 ### Cache地址
